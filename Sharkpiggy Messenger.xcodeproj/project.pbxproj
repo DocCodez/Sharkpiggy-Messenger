@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		628B7DD52B2D6E1511B96B05 /* Pods_Sharkpiggy_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721C89879A6ECA03C87D037 /* Pods_Sharkpiggy_Messenger.framework */; };
 		BFE924C724C0309E0038DD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE924C624C0309E0038DD4E /* AppDelegate.swift */; };
 		BFE924C924C0309E0038DD4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE924C824C0309E0038DD4E /* SceneDelegate.swift */; };
 		BFE924CB24C0309E0038DD4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE924CA24C0309E0038DD4E /* ContentView.swift */; };
 		BFE924CD24C030A10038DD4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE924CC24C030A10038DD4E /* Assets.xcassets */; };
 		BFE924D024C030A10038DD4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE924CF24C030A10038DD4E /* Preview Assets.xcassets */; };
 		BFE924D324C030A10038DD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE924D124C030A10038DD4E /* LaunchScreen.storyboard */; };
+		BFE924DB24C0322B0038DD4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFE924DA24C0322B0038DD4E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3721C89879A6ECA03C87D037 /* Pods_Sharkpiggy_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sharkpiggy_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A33441B667D72798058199C /* Pods-Sharkpiggy Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharkpiggy Messenger.release.xcconfig"; path = "Target Support Files/Pods-Sharkpiggy Messenger/Pods-Sharkpiggy Messenger.release.xcconfig"; sourceTree = "<group>"; };
+		7F07D6F3A2279F30795C2BC2 /* Pods-Sharkpiggy Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharkpiggy Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Sharkpiggy Messenger/Pods-Sharkpiggy Messenger.debug.xcconfig"; sourceTree = "<group>"; };
 		BFE924C324C0309E0038DD4E /* Sharkpiggy Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sharkpiggy Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE924C624C0309E0038DD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE924C824C0309E0038DD4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		BFE924CF24C030A10038DD4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFE924D224C030A10038DD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE924D424C030A10038DD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE924DA24C0322B0038DD4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628B7DD52B2D6E1511B96B05 /* Pods_Sharkpiggy_Messenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1393EE4A50CD5FF4AD1ECCBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F07D6F3A2279F30795C2BC2 /* Pods-Sharkpiggy Messenger.debug.xcconfig */,
+				3A33441B667D72798058199C /* Pods-Sharkpiggy Messenger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D03AAD9C649D44B1FE77CED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3721C89879A6ECA03C87D037 /* Pods_Sharkpiggy_Messenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFE924BA24C0309D0038DD4E = {
 			isa = PBXGroup;
 			children = (
 				BFE924C524C0309E0038DD4E /* Sharkpiggy Messenger */,
 				BFE924C424C0309E0038DD4E /* Products */,
+				1393EE4A50CD5FF4AD1ECCBC /* Pods */,
+				7D03AAD9C649D44B1FE77CED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 				BFE924CC24C030A10038DD4E /* Assets.xcassets */,
 				BFE924D124C030A10038DD4E /* LaunchScreen.storyboard */,
 				BFE924D424C030A10038DD4E /* Info.plist */,
+				BFE924DA24C0322B0038DD4E /* GoogleService-Info.plist */,
 				BFE924CE24C030A10038DD4E /* Preview Content */,
 			);
 			path = "Sharkpiggy Messenger";
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE924D724C030A10038DD4E /* Build configuration list for PBXNativeTarget "Sharkpiggy Messenger" */;
 			buildPhases = (
+				4CAFE9718E33E2F1FED37775 /* [CP] Check Pods Manifest.lock */,
 				BFE924BF24C0309E0038DD4E /* Sources */,
 				BFE924C024C0309E0038DD4E /* Frameworks */,
 				BFE924C124C0309E0038DD4E /* Resources */,
+				898D185C2DA7AFE04BEF26B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +163,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE924D324C030A10038DD4E /* LaunchScreen.storyboard in Resources */,
+				BFE924DB24C0322B0038DD4E /* GoogleService-Info.plist in Resources */,
 				BFE924D024C030A10038DD4E /* Preview Assets.xcassets in Resources */,
 				BFE924CD24C030A10038DD4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CAFE9718E33E2F1FED37775 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sharkpiggy Messenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		898D185C2DA7AFE04BEF26B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sharkpiggy Messenger/Pods-Sharkpiggy Messenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sharkpiggy Messenger/Pods-Sharkpiggy Messenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sharkpiggy Messenger/Pods-Sharkpiggy Messenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFE924BF24C0309E0038DD4E /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		BFE924D824C030A10038DD4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F07D6F3A2279F30795C2BC2 /* Pods-Sharkpiggy Messenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +375,7 @@
 		};
 		BFE924D924C030A10038DD4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A33441B667D72798058199C /* Pods-Sharkpiggy Messenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
