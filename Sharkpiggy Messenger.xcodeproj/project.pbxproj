@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		628B7DD52B2D6E1511B96B05 /* Pods_Sharkpiggy_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721C89879A6ECA03C87D037 /* Pods_Sharkpiggy_Messenger.framework */; };
+		BFD140A024C22C8D003F6E43 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1409F24C22C8D003F6E43 /* ImagePicker.swift */; };
+		BFD140A224C22CAD003F6E43 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD140A124C22CAD003F6E43 /* Indicator.swift */; };
+		BFD140A424C22CDE003F6E43 /* AccountCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD140A324C22CDE003F6E43 /* AccountCreation.swift */; };
+		BFD140A624C22D2A003F6E43 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD140A524C22D2A003F6E43 /* Home.swift */; };
+		BFD140A824C22D5B003F6E43 /* ScndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD140A724C22D5B003F6E43 /* ScndPage.swift */; };
+		BFD140AA24C22D7C003F6E43 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD140A924C22D7C003F6E43 /* FirstPage.swift */; };
+		BFD140AC24C22DA2003F6E43 /* checkUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD140AB24C22DA2003F6E43 /* checkUser.swift */; };
+		BFD140AE24C22DE6003F6E43 /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD140AD24C22DE6003F6E43 /* CreateUser.swift */; };
+		BFD140B124C230BF003F6E43 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BFD140B024C230BF003F6E43 /* SDWebImageSwiftUI */; };
 		BFE924C724C0309E0038DD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE924C624C0309E0038DD4E /* AppDelegate.swift */; };
 		BFE924C924C0309E0038DD4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE924C824C0309E0038DD4E /* SceneDelegate.swift */; };
 		BFE924CB24C0309E0038DD4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE924CA24C0309E0038DD4E /* ContentView.swift */; };
@@ -21,6 +30,14 @@
 		3721C89879A6ECA03C87D037 /* Pods_Sharkpiggy_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sharkpiggy_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A33441B667D72798058199C /* Pods-Sharkpiggy Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharkpiggy Messenger.release.xcconfig"; path = "Target Support Files/Pods-Sharkpiggy Messenger/Pods-Sharkpiggy Messenger.release.xcconfig"; sourceTree = "<group>"; };
 		7F07D6F3A2279F30795C2BC2 /* Pods-Sharkpiggy Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharkpiggy Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Sharkpiggy Messenger/Pods-Sharkpiggy Messenger.debug.xcconfig"; sourceTree = "<group>"; };
+		BFD1409F24C22C8D003F6E43 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BFD140A124C22CAD003F6E43 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		BFD140A324C22CDE003F6E43 /* AccountCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreation.swift; sourceTree = "<group>"; };
+		BFD140A524C22D2A003F6E43 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		BFD140A724C22D5B003F6E43 /* ScndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScndPage.swift; sourceTree = "<group>"; };
+		BFD140A924C22D7C003F6E43 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		BFD140AB24C22DA2003F6E43 /* checkUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkUser.swift; sourceTree = "<group>"; };
+		BFD140AD24C22DE6003F6E43 /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser.swift; sourceTree = "<group>"; };
 		BFE924C324C0309E0038DD4E /* Sharkpiggy Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sharkpiggy Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE924C624C0309E0038DD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE924C824C0309E0038DD4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD140B124C230BF003F6E43 /* SDWebImageSwiftUI in Frameworks */,
 				628B7DD52B2D6E1511B96B05 /* Pods_Sharkpiggy_Messenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +103,14 @@
 				BFE924C624C0309E0038DD4E /* AppDelegate.swift */,
 				BFE924C824C0309E0038DD4E /* SceneDelegate.swift */,
 				BFE924CA24C0309E0038DD4E /* ContentView.swift */,
+				BFD1409F24C22C8D003F6E43 /* ImagePicker.swift */,
+				BFD140A324C22CDE003F6E43 /* AccountCreation.swift */,
+				BFD140A524C22D2A003F6E43 /* Home.swift */,
+				BFD140A724C22D5B003F6E43 /* ScndPage.swift */,
+				BFD140A924C22D7C003F6E43 /* FirstPage.swift */,
+				BFD140AB24C22DA2003F6E43 /* checkUser.swift */,
+				BFD140AD24C22DE6003F6E43 /* CreateUser.swift */,
+				BFD140A124C22CAD003F6E43 /* Indicator.swift */,
 				BFE924CC24C030A10038DD4E /* Assets.xcassets */,
 				BFE924D124C030A10038DD4E /* LaunchScreen.storyboard */,
 				BFE924D424C030A10038DD4E /* Info.plist */,
@@ -120,6 +146,9 @@
 			dependencies = (
 			);
 			name = "Sharkpiggy Messenger";
+			packageProductDependencies = (
+				BFD140B024C230BF003F6E43 /* SDWebImageSwiftUI */,
+			);
 			productName = "Sharkpiggy Messenger";
 			productReference = BFE924C324C0309E0038DD4E /* Sharkpiggy Messenger.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +177,9 @@
 				Base,
 			);
 			mainGroup = BFE924BA24C0309D0038DD4E;
+			packageReferences = (
+				BFD140AF24C230BF003F6E43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = BFE924C424C0309E0038DD4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,8 +251,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE924C724C0309E0038DD4E /* AppDelegate.swift in Sources */,
+				BFD140A024C22C8D003F6E43 /* ImagePicker.swift in Sources */,
+				BFD140A424C22CDE003F6E43 /* AccountCreation.swift in Sources */,
 				BFE924C924C0309E0038DD4E /* SceneDelegate.swift in Sources */,
+				BFD140A224C22CAD003F6E43 /* Indicator.swift in Sources */,
+				BFD140AC24C22DA2003F6E43 /* checkUser.swift in Sources */,
+				BFD140AA24C22D7C003F6E43 /* FirstPage.swift in Sources */,
 				BFE924CB24C0309E0038DD4E /* ContentView.swift in Sources */,
+				BFD140A824C22D5B003F6E43 /* ScndPage.swift in Sources */,
+				BFD140A624C22D2A003F6E43 /* Home.swift in Sources */,
+				BFD140AE24C22DE6003F6E43 /* CreateUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFD140AF24C230BF003F6E43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFD140B024C230BF003F6E43 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFD140AF24C230BF003F6E43 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFE924BB24C0309D0038DD4E /* Project object */;
 }
