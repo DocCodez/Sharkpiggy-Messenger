@@ -79,6 +79,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF071A9C24C259F900EBD92B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFE924CA24C0309E0038DD4E /* ContentView.swift */,
+				BFD140A524C22D2A003F6E43 /* Home.swift */,
+				BFD140A924C22D7C003F6E43 /* FirstPage.swift */,
+				BFD140A724C22D5B003F6E43 /* ScndPage.swift */,
+				BFD140A324C22CDE003F6E43 /* AccountCreation.swift */,
+				BFD1409F24C22C8D003F6E43 /* ImagePicker.swift */,
+				BFD140A124C22CAD003F6E43 /* Indicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF071A9D24C25A0700EBD92B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFD140AD24C22DE6003F6E43 /* CreateUser.swift */,
+				BFD140AB24C22DA2003F6E43 /* checkUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BFE924BA24C0309D0038DD4E = {
 			isa = PBXGroup;
 			children = (
@@ -102,15 +125,8 @@
 			children = (
 				BFE924C624C0309E0038DD4E /* AppDelegate.swift */,
 				BFE924C824C0309E0038DD4E /* SceneDelegate.swift */,
-				BFE924CA24C0309E0038DD4E /* ContentView.swift */,
-				BFD1409F24C22C8D003F6E43 /* ImagePicker.swift */,
-				BFD140A324C22CDE003F6E43 /* AccountCreation.swift */,
-				BFD140A524C22D2A003F6E43 /* Home.swift */,
-				BFD140A724C22D5B003F6E43 /* ScndPage.swift */,
-				BFD140A924C22D7C003F6E43 /* FirstPage.swift */,
-				BFD140AB24C22DA2003F6E43 /* checkUser.swift */,
-				BFD140AD24C22DE6003F6E43 /* CreateUser.swift */,
-				BFD140A124C22CAD003F6E43 /* Indicator.swift */,
+				BF071A9C24C259F900EBD92B /* Views */,
+				BF071A9D24C25A0700EBD92B /* Model */,
 				BFE924CC24C030A10038DD4E /* Assets.xcassets */,
 				BFE924D124C030A10038DD4E /* LaunchScreen.storyboard */,
 				BFE924D424C030A10038DD4E /* Info.plist */,
@@ -140,6 +156,7 @@
 				BFE924C024C0309E0038DD4E /* Frameworks */,
 				BFE924C124C0309E0038DD4E /* Resources */,
 				898D185C2DA7AFE04BEF26B0 /* [CP] Embed Pods Frameworks */,
+				BF733FA024C3A28600E4A0AB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,6 +259,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sharkpiggy Messenger/Pods-Sharkpiggy Messenger-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BF733FA024C3A28600E4A0AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncustom_sim=`xcrun simctl list | grep ‘MultipleSim’ | awk -F’[()]’ ‘{print $2}’`\nif [ ! -z “${custom_sim}” ] && [ “${TARGET_DEVICE_IDENTIFIER}” = “${custom_sim}” ]; then\n/bin/sh multipleSimulatorsStartup.sh &\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
